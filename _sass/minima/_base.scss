@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit * .5;
+  margin-bottom: $spacing-unit * .3;
 }
 
 hr {
@@ -186,7 +186,7 @@ pre {
 div.highlight, figure.highlight {
   @extend %vertical-rhythm;
   border: 1px solid $border-color-01;
-  border-radius: 3px;
+
   pre { margin: 0 }
   table, tbody, th, tr, td {
     margin: 0;
@@ -221,8 +221,8 @@ code.highlighter-rouge {
   @extend %clearfix;
 
   @media screen and (max-width: $on-medium) {
-    padding-right: $spacing-unit * 0.6;
-    padding-left: $spacing-unit * 0.6;
+    padding-right: $spacing-unit * 0.3;
+    padding-left: $spacing-unit * 0.3;
   }
 }
 

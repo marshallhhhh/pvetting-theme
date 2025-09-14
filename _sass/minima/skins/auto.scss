@@ -3,8 +3,8 @@
 // Default color scheme settings
 // These are overridden in classic.css and dark.scss
 
-$color-scheme-auto: false !default;
-$color-scheme-dark: true !default;
+$color-scheme-auto: true !default;
+$color-scheme-dark: false !default;
 
 
 // Light mode
@@ -120,21 +120,21 @@ $lm-table-border-color:    $lm-border-color-01 !default;
 // Dark mode
 // ---------
 
-$dm-brand-color:           #FF2D2D !default;
+$dm-brand-color:           #006DDA !default;
 $dm-brand-color-light:     lighten($dm-brand-color, 5%) !default;
 $dm-brand-color-dimmed:    darken($dm-brand-color, 8%) !default;
 $dm-brand-color-dark:      darken($dm-brand-color, 43%) !default;
 
 $dm-site-title-color:      $dm-brand-color-light !default;
 
-$dm-heading-color:         #FF2D2D !default;
-$dm-text-color:            darken($dm-heading-color, 15%) !default;
-$dm-background-color:      #1B0303 !default;
-$dm-code-background-color: #371E1E !default;
+$dm-heading-color:         #fafafa !default;
+$dm-text-color:            #fafafa; //darken($dm-heading-color, 15%) !default;
+$dm-background-color:      darken($dm-brand-color, 90%) !default;
+$dm-code-background-color: lighten($dm-background-color, 5%) !default;
 
-$dm-link-base-color:       #FF76FA !default;
-$dm-link-visited-color:    #FFB2FC !default;
-$dm-link-hover-color:      $dm-text-color !default;
+$dm-link-base-color:       $dm-brand-color !default;
+$dm-link-visited-color:    $dm-brand-color  !default;
+$dm-link-hover-color:      lighten($dm-brand-color, 20%) !default;
 
 $dm-border-color-01:       $dm-brand-color-dark !default;
 $dm-border-color-02:       $dm-brand-color-light !default;
@@ -145,7 +145,6 @@ $dm-table-zebra-color:     lighten($dm-background-color, 4%) !default;
 $dm-table-header-bg-color: lighten($dm-background-color, 10%) !default;
 $dm-table-header-border:   lighten($dm-background-color, 15%) !default;
 $dm-table-border-color:    $dm-border-color-01 !default;
-
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
 // List of tokens: https://github.com/rouge-ruby/rouge/wiki/List-of-tokens

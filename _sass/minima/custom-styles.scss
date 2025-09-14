@@ -1,2 +1,45 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+body {
+    background-image: url("/assets/images/windows-xp-bliss-4k-lu.jpg");
+    background-position: top left; 
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+article {
+    padding: 13px;
+}
+
+figure.highlight, div.highlight {
+  border: 2px solid;
+  border-radius: 0px;
+  border-color: $win31-border-light $win31-border-dark $win31-border-dark $win31-border-light;
+  background: $win31-background;
+}
+
+pre,
+code {
+  background: darken($win31-background,3%);
+}
+
+.site-header, .win31-header {
+  background: $win31-header-color;      
+  padding: 0.3em 0.6em;
+  font-size: $site-header-font-size;
+  font-weight: bold;
+  text-align: left;          /* always left-aligned */
+  border: 2px solid;
+  border-color: $win31-border-light $win31-border-dark $win31-border-dark $win31-border-light; /* 3D effect */
+}
+
+.win31-window {
+  border: 2px solid;
+  border-color: $win31-border-light $win31-border-dark $win31-border-dark $win31-border-light;
+  background: $win31-background;
+}
+
+.win31-body {
+  padding: 1em;
+}
