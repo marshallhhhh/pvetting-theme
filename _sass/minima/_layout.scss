@@ -38,7 +38,7 @@
   }
 
   .nav-item {
-    color: $text-color;
+    color: $win31-header-text;
     &:not(:last-child) {
       margin-right: $spacing-unit * 0.5;
     }

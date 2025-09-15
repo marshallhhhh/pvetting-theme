@@ -26,8 +26,8 @@ minima:
   #     * auto               Adaptive skin based on the default classic and dark skins.
   #     * solarized-light    Light variant of solarized color scheme.
   #     * solarized-dark     Dark variant of solarized color scheme.
-  #     * solarized          Adaptive skin for solarized color scheme skins.
-  skin: light
+  #     * solarized          Adaptive skin for solarized color scheme skins.`
+  skin: classic
 
   # Specific pages for site navigation.
   #   If you wish to link only specific pages in the site-navigation, use this and list

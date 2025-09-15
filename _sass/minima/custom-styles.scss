@@ -8,6 +8,11 @@ body {
     background-size: cover;
 }
 
+::selection {
+    color: white;
+    background-color: $w31-blue;
+}
+
 article {
     padding: 13px;
 }
@@ -19,12 +24,9 @@ figure.highlight, div.highlight {
   background: $win31-background;
 }
 
-pre,
-code {
-  background: darken($win31-background,3%);
-}
 
 .site-header, .win31-header {
+  color: $win31-header-text;
   background: $win31-header-color;      
   padding: 0.3em 0.6em;
   font-size: $site-header-font-size;
@@ -32,6 +34,9 @@ code {
   text-align: left;          /* always left-aligned */
   border: 2px solid;
   border-color: $win31-border-light $win31-border-dark $win31-border-dark $win31-border-light; /* 3D effect */
+h1 {
+color: $win31-header-text;
+}
 }
 
 .win31-window {
@@ -42,4 +47,118 @@ code {
 
 .win31-body {
   padding: 1em;
+}
+
+.nav-item:hover {
+    background-color: darken($win31-header-color,10%);
+    text-decoration: none;
+}
+
+.post-list {
+    padding: 13px;
+
+    .win31-window {
+        padding-left: 13px;
+        padding-right: 13px;
+        //padding-top: $spacing-unit * .3;
+    }
+}
+ 
+a {
+    color: $w31-blue;
+
+    &:hover {
+        color: lighten($w31-blue, 10%);
+    }
+
+    &:visited {
+        color: $w31-blue;
+    }
+}
+
+
+// code blocks
+pre,
+code {
+  background: $code-background-color;
+}
+
+.highlight {
+        .err   { color: #e3d2d2; background-color: #a61717 } // Error
+
+    .c     { color: #7c7874 } // Comment
+    .cm    { color: #7c7874 } // Comment.Multiline
+    .cp    { color: #7c7874 } // Comment.Preproc
+    .c1    { color: #7c7874 } // Comment.Single
+    .cs    { color: #7c7874; font-style: italic } // Comment.Special
+
+    .gd    { color: #e25050 } // Generic.Deleted
+    .gd .x { color: #e25050 } // Generic.Deleted.Specific
+    .ge    { font-style: italic } // Generic.Emph
+    .gh    { color: #999999 } // Generic.Heading
+    .gi    { color: #3f993f } // Generic.Inserted
+    .gi .x { color: #3f993f } // Generic.Inserted.Specific
+    .go    { color: #888888 } // Generic.Output
+    .gp    { color: #555555 } // Generic.Prompt
+    .gr    { color: #aa0000 } // Generic.Error
+    .gs    { font-weight: bold } // Generic.Strong
+    .gt    { color: #aa0000 } // Generic.Traceback
+    .gu    { color: #aaaaaa } // Generic.Subheading
+
+    .k     { color: #cf222e } // Keyword
+    .kc    { color: #cf222e } // Keyword.Constant
+    .kd    { color: #cf222e } // Keyword.Declaration
+    .kp    { color: #cf222e } // Keyword.Pseudo
+    .kr    { color: #cf222e } // Keyword.Reserved
+    .kt    { color: #445588 } // Keyword.Type
+
+    .n     { color: #111111 }
+    .na    { color: #097e39 } // Name.Attribute
+    .nb    { color: #cf222e } // Name.Builtin
+    .bp    { color: #999999 } // Name.Builtin.Pseudo
+    .nc    { color: #097e39 } // Name.Class
+    .ne    { color: #990000 } // Name.Exception
+    .nf    { color: #006e40 } // Name.Function
+    .ni    { color: #097e39 } // Name.Entity
+    .nn    { color: #097e39 } // Name.Namespace
+    .no    { color: #a61154 } // Name.Constant
+    .nt    { color: #b81e63 } // Name.Tag
+    .nv    { color: #752a75 } // Name.Variable
+    .vc    { color: #752a75 } // Name.Variable.Class
+    .vg    { color: #752a75 } // Name.Variable.Global
+    .vi    { color: #752a75 } // Name.Variable.Instance
+
+    .o     { color: #0842a0 } // Operator
+    .ow    { color: #0842a0 } // Operator.Word
+
+    .m     { color: #005a99 } // Literal.Number
+    .mf    { color: #005a99 } // Literal.Number.Float
+    .mh    { color: #005a99 } // Literal.Number.Hex
+    .mi    { color: #005a99 } // Literal.Number.Integer
+    .il    { color: #005a99 } // Literal.Number.Integer.Long
+    .mo    { color: #005a99 } // Literal.Number.Oct
+
+    .s     { color: #914d08 } // Literal.String
+    .s1    { color: #914d08 } // Literal.String.Single
+    .s2    { color: #914d08 } // Literal.String.Double
+    .sb    { color: #914d08 } // Literal.String.Backtick
+    .sc    { color: #914d08 } // Literal.String.Char
+    .sd    { color: #914d08 } // Literal.String.Doc
+    .se    { color: #914d08 } // Literal.String.Escape
+    .sh    { color: #914d08 } // Literal.String.Heredoc
+    .si    { color: #914d08 } // Literal.String.Interpol
+    .sr    { color: #009926 } // Literal.String.Regex
+    .ss    { color: #0842a0 } // Literal.String.Symbol
+    .sx    { color: #914d08 } // Literal.String.Other
+
+    .w     { color: #bbbbbb } // Text.Whitespace
+
+    .lineno, .gl { color: #9c9996 } // Line Number
+    .hll   { background-color: #ffffcc } // Marked-lines
+}
+
+table{
+    thead {
+        color: $win31-header-text;
+    }
 }

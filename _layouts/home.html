@@ -1,10 +1,10 @@
 ---
 layout: base
 ---
-
+<div class="win31-window">
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+    <div class="win31-header">{{ page.title }}</div>
   {%- endif -%}
 
   {{ content }}
@@ -24,6 +24,7 @@ layout: base
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
+      <div class="win31-window">
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
@@ -35,6 +36,7 @@ layout: base
           {{ post.excerpt }}
         {%- endif -%}
       </li>
+      </div>
       {%- endfor -%}
     </ul>
 
@@ -64,4 +66,5 @@ layout: base
       </div>
     {%- endif %}
   {%- endif -%}
+</div>
 </div>

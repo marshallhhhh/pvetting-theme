@@ -320,11 +320,11 @@ $table-border-color: $lm-table-border-color;
       --minima-border-color-02: #{$dm-border-color-02};
       --minima-border-color-03: #{$dm-border-color-03};
 
-      --minima-table-text-color: #{$dm-table-text-color};
-      --minima-table-zebra-color: #{$dm-table-zebra-color};
-      --minima-table-header-bg-color: #{$dm-table-header-bg-color};
-      --minima-table-header-border: #{$dm-table-header-border};
-      --minima-table-border-color: #{$dm-table-border-color};
+      --minima-table-text-color: #{$lm-table-text-color};
+      --minima-table-zebra-color: #{$lm-table-zebra-color};
+      --minima-table-header-bg-color: #{$lm-table-header-bg-color};
+      --minima-table-header-border: #{$lm-table-header-border};
+      --minima-table-border-color: #{$lm-table-border-color};
     }
 
     @include dm-highlight;

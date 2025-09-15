@@ -1,5 +1,10 @@
 // custom
 
+$w31-blue: #004080;
+$text-color: #0c0c0c;
+
+$code-background-color: #e4e4e4;
+
 $border-radius: 10px;
 
 $base-font-size:   16px !default;
@@ -7,9 +12,23 @@ $base-font-weight: 400 !default;
 
 $site-header-font-size: 18px;
 
-$win31-background: #202020;
-$win31-border-light: #606060;
-$win31-border-dark: #000000;
+$win31-background: #cfcfcf;
+$win31-border-light: #ffffff;
+$win31-border-dark: #808080;
 $win31-header-color: #004080;
 $win31-header-text: #fafafa;
 $win31-body-text: #fafafa;
+
+$heading-color: $win31-header-color;
+
+
+// tables
+$table-text-color:      $text-color;
+$table-zebra-color:     lighten($w31-blue, 65%);
+$table-header-bg-color: lighten($w31-blue, 10%);
+$table-header-border:   $win31-border-light;
+$table-border-color:    $win31-border-dark;
+
+:root{
+--minima-table-header-bg-color: #{$table-header-bg-color}; 
+}
